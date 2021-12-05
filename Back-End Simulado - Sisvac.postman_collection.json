@@ -1,0 +1,2361 @@
+{
+	"info": {
+		"_postman_id": "850b8f74-7940-43e2-9b95-b80ce89980ea",
+		"name": "Back-End Simulado - Sisvac",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 - Cadastro de usuário",
+			"item": [
+				{
+					"name": "Criar Usuário - Perfil cidadão",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 0,\r\n  \"userRoleId\": 5,\r\n  \"fullName\": \"Ricardo Araújo\",\r\n  \"mobile\": \"\",\r\n  \"email\": \"ricardoca@hotmail.com\",\r\n  \"dateOfBirth\": \"1984-12-05T18:53:16.964Z\",\r\n  \"imagePath\": \"\",\r\n  \"userName\": \"ricardo04\",\r\n  \"password\": \"12345678\",\r\n  \"isActive\": true,\r\n  \"addedBy\": 0,\r\n  \"isMigrationData\": false,\r\n  \"dateAdded\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastPasswordChangeDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"passwordChangedBy\": 0,\r\n  \"isPasswordChange\": true,\r\n  \"lastUpdatedDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastUpdatedBy\": 0,\r\n  \"logradouro\": \"\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"\",\r\n  \"cidade\": \"\",\r\n  \"uf\": \"\",\r\n  \"cep\": \"\",\r\n  \"telefoneFixo\": \"\",\r\n  \"telefoneCelular\": \"\",\r\n  \"nomeMae\": \"\",\r\n  \"nomePai\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/CriarUsuarioExterno",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"CriarUsuarioExterno"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar Usuário",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": 0,\r\n  \"userRoleId\": 5,\r\n  \"fullName\": \"Ricardo Araújo\",\r\n  \"mobile\": \"\",\r\n  \"email\": \"ricardoca@hotmail.com\",\r\n  \"dateOfBirth\": \"1984-12-05T18:53:16.964Z\",\r\n  \"imagePath\": \"\",\r\n  \"userName\": \"ricardo04\",\r\n  \"password\": \"12345678\",\r\n  \"isActive\": true,\r\n  \"addedBy\": 0,\r\n  \"isMigrationData\": false,\r\n  \"dateAdded\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastPasswordChangeDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"passwordChangedBy\": 0,\r\n  \"isPasswordChange\": true,\r\n  \"lastUpdatedDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastUpdatedBy\": 0,\r\n  \"logradouro\": \"\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"\",\r\n  \"cidade\": \"\",\r\n  \"uf\": \"\",\r\n  \"cep\": \"\",\r\n  \"telefoneFixo\": \"\",\r\n  \"telefoneCelular\": \"\",\r\n  \"nomeMae\": \"\",\r\n  \"nomePai\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/CriarUsuarioExterno",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"CriarUsuarioExterno"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Criado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar Usuário - Perfil agente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 0,\r\n  \"userRoleId\": 2,\r\n  \"fullName\": \"Ricardo Araújo\",\r\n  \"mobile\": \"\",\r\n  \"email\": \"ricardoca@hotmail.com\",\r\n  \"dateOfBirth\": \"1984-12-05T18:53:16.964Z\",\r\n  \"imagePath\": \"\",\r\n  \"userName\": \"ricardo04\",\r\n  \"password\": \"12345678\",\r\n  \"isActive\": true,\r\n  \"addedBy\": 0,\r\n  \"isMigrationData\": false,\r\n  \"dateAdded\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastPasswordChangeDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"passwordChangedBy\": 0,\r\n  \"isPasswordChange\": true,\r\n  \"lastUpdatedDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastUpdatedBy\": 0,\r\n  \"logradouro\": \"\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"\",\r\n  \"cidade\": \"\",\r\n  \"uf\": \"\",\r\n  \"cep\": \"\",\r\n  \"telefoneFixo\": \"\",\r\n  \"telefoneCelular\": \"\",\r\n  \"nomeMae\": \"\",\r\n  \"nomePai\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/CriarUsuarioExterno",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"CriarUsuarioExterno"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar Usuário",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": 0,\r\n  \"userRoleId\": 2,\r\n  \"fullName\": \"Ricardo Araújo\",\r\n  \"mobile\": \"\",\r\n  \"email\": \"ricardoca@hotmail.com\",\r\n  \"dateOfBirth\": \"1984-12-05T18:53:16.964Z\",\r\n  \"imagePath\": \"\",\r\n  \"userName\": \"ricardo04\",\r\n  \"password\": \"12345678\",\r\n  \"isActive\": true,\r\n  \"addedBy\": 0,\r\n  \"isMigrationData\": false,\r\n  \"dateAdded\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastPasswordChangeDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"passwordChangedBy\": 0,\r\n  \"isPasswordChange\": true,\r\n  \"lastUpdatedDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastUpdatedBy\": 0,\r\n  \"logradouro\": \"\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"\",\r\n  \"cidade\": \"\",\r\n  \"uf\": \"\",\r\n  \"cep\": \"\",\r\n  \"telefoneFixo\": \"\",\r\n  \"telefoneCelular\": \"\",\r\n  \"nomeMae\": \"\",\r\n  \"nomePai\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/CriarUsuarioExterno",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"CriarUsuarioExterno"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Criado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar Usuário - Perfil administrador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 0,\r\n  \"userRoleId\": 2,\r\n  \"fullName\": \"Ricardo Araújo\",\r\n  \"mobile\": \"\",\r\n  \"email\": \"ricardoca@hotmail.com\",\r\n  \"dateOfBirth\": \"1984-12-05T18:53:16.964Z\",\r\n  \"imagePath\": \"\",\r\n  \"userName\": \"ricardo04\",\r\n  \"password\": \"12345678\",\r\n  \"isActive\": true,\r\n  \"addedBy\": 0,\r\n  \"isMigrationData\": false,\r\n  \"dateAdded\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastPasswordChangeDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"passwordChangedBy\": 0,\r\n  \"isPasswordChange\": true,\r\n  \"lastUpdatedDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastUpdatedBy\": 0,\r\n  \"logradouro\": \"\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"\",\r\n  \"cidade\": \"\",\r\n  \"uf\": \"\",\r\n  \"cep\": \"\",\r\n  \"telefoneFixo\": \"\",\r\n  \"telefoneCelular\": \"\",\r\n  \"nomeMae\": \"\",\r\n  \"nomePai\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/CriarUsuarioExterno",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"CriarUsuarioExterno"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar Usuário",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": 0,\r\n  \"userRoleId\": 1,\r\n  \"fullName\": \"Ricardo Araújo\",\r\n  \"mobile\": \"\",\r\n  \"email\": \"ricardoca@hotmail.com\",\r\n  \"dateOfBirth\": \"1984-12-05T18:53:16.964Z\",\r\n  \"imagePath\": \"\",\r\n  \"userName\": \"ricardo04\",\r\n  \"password\": \"12345678\",\r\n  \"isActive\": true,\r\n  \"addedBy\": 0,\r\n  \"isMigrationData\": false,\r\n  \"dateAdded\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastPasswordChangeDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"passwordChangedBy\": 0,\r\n  \"isPasswordChange\": true,\r\n  \"lastUpdatedDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastUpdatedBy\": 0,\r\n  \"logradouro\": \"\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"\",\r\n  \"cidade\": \"\",\r\n  \"uf\": \"\",\r\n  \"cep\": \"\",\r\n  \"telefoneFixo\": \"\",\r\n  \"telefoneCelular\": \"\",\r\n  \"nomeMae\": \"\",\r\n  \"nomePai\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/CriarUsuarioExterno",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"CriarUsuarioExterno"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Criado com sucesso\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2 - Realizar Login",
+			"item": [
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 0,\r\n  \"userRoleId\": 5,\r\n  \"fullName\": \"Ricardo Araújo\",\r\n  \"mobile\": \"\",\r\n  \"email\": \"ricardoca@hotmail.com\",\r\n  \"dateOfBirth\": \"1984-12-05T18:53:16.964Z\",\r\n  \"imagePath\": \"\",\r\n  \"userName\": \"ricardo04\",\r\n  \"password\": \"12345678\",\r\n  \"isActive\": true,\r\n  \"addedBy\": 0,\r\n  \"isMigrationData\": false,\r\n  \"dateAdded\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastPasswordChangeDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"passwordChangedBy\": 0,\r\n  \"isPasswordChange\": true,\r\n  \"lastUpdatedDate\": \"2021-12-05T18:53:16.964Z\",\r\n  \"lastUpdatedBy\": 0,\r\n  \"logradouro\": \"\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"\",\r\n  \"cidade\": \"\",\r\n  \"uf\": \"\",\r\n  \"cep\": \"\",\r\n  \"telefoneFixo\": \"\",\r\n  \"telefoneCelular\": \"\",\r\n  \"nomeMae\": \"\",\r\n  \"nomePai\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterInformacoesLogin/admin%402021/admin%402021\n",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"ObterInformacoesLogin",
+								"admin%402021",
+								"admin%402021\n"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterInformacoesLogin/admin%402021/admin%402021\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"ObterInformacoesLogin",
+										"admin%402021",
+										"admin%402021\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI\",\r\n  \"obj\": {\r\n    \"userId\": 1,\r\n    \"userRoleId\": 1,\r\n    \"roleName\": \"Admin\",\r\n    \"fullName\": \"Ricardo\",\r\n    \"mobile\": null,\r\n    \"email\": null,\r\n    \"imagePath\": \"http://localhost:5001/Resources/Images/83078368-8953-4f88-a0b9-d60b19580b0f_avatar-4.png\",\r\n    \"dateOfBirth\": null,\r\n    \"lastUpdatedBy\": null,\r\n    \"userName\": \"admin@2021\",\r\n    \"password\": \"admin@2021\",\r\n    \"logradouro\": null,\r\n    \"complemento\": null,\r\n    \"bairro\": null,\r\n    \"cidade\": null,\r\n    \"uf\": null,\r\n    \"cep\": null,\r\n    \"telefoneFixo\": null,\r\n    \"telefoneCelular\": null,\r\n    \"nomeMae\": null,\r\n    \"nomePai\": null\r\n  }\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "3 - Vacina",
+			"item": [
+				{
+					"name": "Obter Vacinas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/ObterVacinas\n",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacina",
+								"ObterVacinas\n"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter Vacinas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/ObterVacinas\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacina",
+										"ObterVacinas\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"data\": [\r\n    {\r\n      \"vacinaId\": 17,\r\n      \"codigoIdentificador\": 0,\r\n      \"nome\": \"Pfizer\",\r\n      \"descricao\": \"Laboratório responsável BioNTech.\",\r\n      \"adicionadoPor\": 0,\r\n      \"dataAlteracao\": null,\r\n      \"alteradoPor\": null,\r\n      \"ativo\": true,\r\n      \"statusDescricao\": \"Ativo\",\r\n      \"estoque\": {\r\n        \"estoqueId\": 12,\r\n        \"vacina\": null,\r\n        \"vacinaId\": 17,\r\n        \"quantidade\": 0,\r\n        \"quantidadeMinimaAlerta\": 0,\r\n        \"adicionadoPor\": 0,\r\n        \"dataAlteracao\": \"2021-12-05T19:12:12.123\",\r\n        \"alteradoPor\": 0\r\n      },\r\n      \"quantidade\": 0,\r\n      \"quantidadeMinimaAlerta\": 0,\r\n      \"estoqueVacinas\": null,\r\n      \"campanhaVacinas\": null,\r\n      \"cartaoVacinacaoRegistro\": null\r\n    },\r\n    {\r\n      \"vacinaId\": 17,\r\n      \"codigoIdentificador\": 0,\r\n      \"nome\": \"Pfizer\",\r\n      \"descricao\": \"Laboratório responsável BioNTech.\",\r\n      \"adicionadoPor\": 0,\r\n      \"dataAlteracao\": null,\r\n      \"alteradoPor\": null,\r\n      \"ativo\": true,\r\n      \"statusDescricao\": \"Ativo\",\r\n      \"estoque\": {\r\n        \"estoqueId\": 13,\r\n        \"vacina\": null,\r\n        \"vacinaId\": 17,\r\n        \"quantidade\": 0,\r\n        \"quantidadeMinimaAlerta\": 0,\r\n        \"adicionadoPor\": 1,\r\n        \"dataAlteracao\": null,\r\n        \"alteradoPor\": null\r\n      },\r\n      \"quantidade\": 0,\r\n      \"quantidadeMinimaAlerta\": 0,\r\n      \"estoqueVacinas\": null,\r\n      \"campanhaVacinas\": null,\r\n      \"cartaoVacinacaoRegistro\": null\r\n    },\r\n    {\r\n      \"vacinaId\": 16,\r\n      \"codigoIdentificador\": 1,\r\n      \"nome\": \"CoronaVac\",\r\n      \"descricao\": \"Vac\",\r\n      \"adicionadoPor\": 0,\r\n      \"dataAlteracao\": null,\r\n      \"alteradoPor\": null,\r\n      \"ativo\": true,\r\n      \"statusDescricao\": \"Ativo\",\r\n      \"estoque\": {\r\n        \"estoqueId\": 11,\r\n        \"vacina\": null,\r\n        \"vacinaId\": 16,\r\n        \"quantidade\": 2,\r\n        \"quantidadeMinimaAlerta\": 1,\r\n        \"adicionadoPor\": 1,\r\n        \"dataAlteracao\": \"2021-12-04T05:32:57.8\",\r\n        \"alteradoPor\": 1\r\n      },\r\n      \"quantidade\": 2,\r\n      \"quantidadeMinimaAlerta\": 1,\r\n      \"estoqueVacinas\": null,\r\n      \"campanhaVacinas\": null,\r\n      \"cartaoVacinacaoRegistro\": null\r\n    }\r\n  ],\r\n  \"recordsTotal\": 3,\r\n  \"recordsFiltered\": 3\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar Vacina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vacinaId\": 0,\r\n  \"codigoIdentificador\": 2,\r\n  \"nome\": \"Pfizer\",\r\n  \"descricao\": \"Laboratório responsável BioNTech.\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:12:12.122Z\",\r\n  \"alteradoPor\": 0,\r\n  \"ativo\": true,\r\n  \"statusDescricao\": \"\",\r\n  \"estoque\": {\r\n    \"estoqueId\": 0,\r\n    \"vacinaId\": 0,\r\n    \"quantidade\": 2,\r\n    \"quantidadeMinimaAlerta\": 1,\r\n    \"adicionadoPor\": 1,\r\n    \"dataAlteracao\": \"2021-12-05T19:12:12.122Z\",\r\n    \"alteradoPor\": 0\r\n  },\r\n  \"estoqueVacinas\": [\r\n    {\r\n      \"estoqueId\": 0,\r\n      \"vacinaId\": 0,\r\n      \"quantidade\": 0,\r\n      \"quantidadeMinimaAlerta\": 0,\r\n      \"adicionadoPor\": 0,\r\n      \"dataAlteracao\": \"2021-12-05T19:12:12.122Z\",\r\n      \"alteradoPor\": 0\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/CriarVacina",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacina",
+								"CriarVacina"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar Vacina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"vacinaId\": 0,\r\n  \"codigoIdentificador\": 2,\r\n  \"nome\": \"Pfizer\",\r\n  \"descricao\": \"Laboratório responsável BioNTech.\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:12:12.122Z\",\r\n  \"alteradoPor\": 0,\r\n  \"ativo\": true,\r\n  \"statusDescricao\": \"\",\r\n  \"estoque\": {\r\n    \"estoqueId\": 0,\r\n    \"vacinaId\": 0,\r\n    \"quantidade\": 2,\r\n    \"quantidadeMinimaAlerta\": 1,\r\n    \"adicionadoPor\": 1,\r\n    \"dataAlteracao\": \"2021-12-05T19:12:12.122Z\",\r\n    \"alteradoPor\": 0\r\n  },\r\n  \"estoqueVacinas\": [\r\n    {\r\n      \"estoqueId\": 0,\r\n      \"vacinaId\": 0,\r\n      \"quantidade\": 0,\r\n      \"quantidadeMinimaAlerta\": 0,\r\n      \"adicionadoPor\": 0,\r\n      \"dataAlteracao\": \"2021-12-05T19:12:12.122Z\",\r\n      \"alteradoPor\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/CriarVacina\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacina",
+										"CriarVacina\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Criado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar Vacina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vacinaId\": 16,\r\n  \"codigoIdentificador\": 1,\r\n  \"nome\": \"CoronaVac\",\r\n  \"descricao\": \"Laboratório responsável Butantan\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:16:29.228Z\",\r\n  \"alteradoPor\": 1,\r\n  \"ativo\": true,\r\n  \"estoque\": {\r\n    \"estoqueId\": 0,\r\n    \"vacinaId\": 0,\r\n    \"quantidade\": 0,\r\n    \"quantidadeMinimaAlerta\": 0,\r\n    \"adicionadoPor\": 0,\r\n    \"dataAlteracao\": \"2021-12-05T19:16:29.228Z\",\r\n    \"alteradoPor\": 0\r\n  },\r\n  \"estoqueVacinas\": [\r\n    {\r\n      \"estoqueId\": 11,\r\n      \"vacinaId\": 16,\r\n      \"quantidade\": 1000,\r\n      \"quantidadeMinimaAlerta\": 300,\r\n      \"adicionadoPor\": 1,\r\n      \"dataAlteracao\": \"2021-12-05T19:16:29.228Z\",\r\n      \"alteradoPor\": 0\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/AtualizarVacina",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacina",
+								"AtualizarVacina"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar Vacina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"vacinaId\": 16,\r\n  \"codigoIdentificador\": 1,\r\n  \"nome\": \"CoronaVac\",\r\n  \"descricao\": \"Laboratório responsável Butantan\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:16:29.228Z\",\r\n  \"alteradoPor\": 1,\r\n  \"ativo\": true,\r\n  \"estoque\": {\r\n    \"estoqueId\": 0,\r\n    \"vacinaId\": 0,\r\n    \"quantidade\": 0,\r\n    \"quantidadeMinimaAlerta\": 0,\r\n    \"adicionadoPor\": 0,\r\n    \"dataAlteracao\": \"2021-12-05T19:16:29.228Z\",\r\n    \"alteradoPor\": 0\r\n  },\r\n  \"estoqueVacinas\": [\r\n    {\r\n      \"estoqueId\": 11,\r\n      \"vacinaId\": 16,\r\n      \"quantidade\": 1000,\r\n      \"quantidadeMinimaAlerta\": 300,\r\n      \"adicionadoPor\": 1,\r\n      \"dataAlteracao\": \"2021-12-05T19:16:29.228Z\",\r\n      \"alteradoPor\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/AtualizarVacina\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacina",
+										"AtualizarVacina\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Atualizado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar estoque",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estoqueId\": 11,\r\n  \"vacinaId\": 16,\r\n  \"quantidade\": 1000,\r\n  \"quantidadeMinimaAlerta\": 200,\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:20:14.989Z\",\r\n  \"alteradoPor\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/AtualizarEstoqueVacina",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacina",
+								"AtualizarEstoqueVacina"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar estoque",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"estoqueId\": 11,\r\n  \"vacinaId\": 16,\r\n  \"quantidade\": 1000,\r\n  \"quantidadeMinimaAlerta\": 200,\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:20:14.989Z\",\r\n  \"alteradoPor\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/AtualizarEstoqueVacina\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacina",
+										"AtualizarEstoqueVacina\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Estoque atualizado com sucesso\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "4 - Campanhas",
+			"item": [
+				{
+					"name": "Obter Campanhas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/CampanhaVacinacao/ObterCampanhasVacinacao\n",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"CampanhaVacinacao",
+								"ObterCampanhasVacinacao\n"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter Campanhas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/CampanhaVacinacao/ObterCampanhasVacinacao\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"CampanhaVacinacao",
+										"ObterCampanhasVacinacao\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"data\": [\r\n    {\r\n      \"campanhaId\": 4,\r\n      \"vacina\": {\r\n        \"vacinaId\": 16,\r\n        \"codigoIdentificador\": 1,\r\n        \"nome\": \"CoronaVac\",\r\n        \"descricao\": \"Vacinação\",\r\n        \"adicionadoPor\": 1,\r\n        \"dataAlteracao\": \"2021-12-05T16:19:05.063\",\r\n        \"alteradoPor\": 1,\r\n        \"ativo\": true,\r\n        \"statusDescricao\": null,\r\n        \"estoque\": null,\r\n        \"quantidade\": 0,\r\n        \"quantidadeMinimaAlerta\": 0,\r\n        \"estoqueVacinas\": null,\r\n        \"campanhaVacinas\": null,\r\n        \"cartaoVacinacaoRegistro\": null\r\n      },\r\n      \"vacinaId\": 16,\r\n      \"nome\": \"teste\",\r\n      \"descricao\": \"\",\r\n      \"dataInicial\": \"2021-12-03T00:00:00\",\r\n      \"dataFinal\": \"2021-12-01T00:00:00\",\r\n      \"idadeFaixaEtariaInicial\": 111,\r\n      \"idadeFaixaEtariaFinal\": 111,\r\n      \"adicionadoPor\": 1,\r\n      \"alteradoPor\": null,\r\n      \"dataAlteracao\": null,\r\n      \"intervaloDeIdade\": \"111 até 111\",\r\n      \"intervaloDeDataCampanha\": \"03/12/2021 até 01/12/2021\"\r\n    },\r\n    {\r\n      \"campanhaId\": 5,\r\n      \"vacina\": {\r\n        \"vacinaId\": 16,\r\n        \"codigoIdentificador\": 1,\r\n        \"nome\": \"CoronaVac\",\r\n        \"descricao\": \"Vacinação\",\r\n        \"adicionadoPor\": 1,\r\n        \"dataAlteracao\": \"2021-12-05T16:19:05.063\",\r\n        \"alteradoPor\": 1,\r\n        \"ativo\": true,\r\n        \"statusDescricao\": null,\r\n        \"estoque\": null,\r\n        \"quantidade\": 0,\r\n        \"quantidadeMinimaAlerta\": 0,\r\n        \"estoqueVacinas\": null,\r\n        \"campanhaVacinas\": null,\r\n        \"cartaoVacinacaoRegistro\": null\r\n      },\r\n      \"vacinaId\": 16,\r\n      \"nome\": \"Vacinação 80 à 85 anos\",\r\n      \"descricao\": \"Vacinação contra o vírus COVID-19.\",\r\n      \"dataInicial\": \"2021-12-05T19:24:36.131\",\r\n      \"dataFinal\": \"2021-12-08T19:24:36.131\",\r\n      \"idadeFaixaEtariaInicial\": 80,\r\n      \"idadeFaixaEtariaFinal\": 85,\r\n      \"adicionadoPor\": 1,\r\n      \"alteradoPor\": 0,\r\n      \"dataAlteracao\": \"2021-12-05T19:24:36.13\",\r\n      \"intervaloDeIdade\": \"80 até 85\",\r\n      \"intervaloDeDataCampanha\": \"05/12/2021 até 08/12/2021\"\r\n    }\r\n  ],\r\n  \"recordsTotal\": 3,\r\n  \"recordsFiltered\": 3\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar Campanha",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"campanhaId\": 0,\r\n  \"vacinaId\": 16,\r\n  \"nome\": \"Vacinação 80 à 85 anos\",\r\n  \"descricao\": \"Vacinação contra o vírus COVID-19.\",\r\n  \"dataInicial\": \"2021-12-05T19:24:36.131Z\",\r\n  \"dataFinal\": \"2021-12-08T19:24:36.131Z\",\r\n  \"idadeFaixaEtariaInicial\": 80,\r\n  \"idadeFaixaEtariaFinal\": 85,\r\n  \"adicionadoPor\": 1,\r\n  \"alteradoPor\": 0,\r\n  \"dataAlteracao\": \"2021-12-05T19:24:36.131Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/CampanhaVacinacao/CriarCampanhaVacinacao",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"CampanhaVacinacao",
+								"CriarCampanhaVacinacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar Campanha",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"campanhaId\": 0,\r\n  \"vacinaId\": 16,\r\n  \"nome\": \"Vacinação 80 à 85 anos\",\r\n  \"descricao\": \"Vacinação contra o vírus COVID-19.\",\r\n  \"dataInicial\": \"2021-12-05T19:24:36.131Z\",\r\n  \"dataFinal\": \"2021-12-08T19:24:36.131Z\",\r\n  \"idadeFaixaEtariaInicial\": 80,\r\n  \"idadeFaixaEtariaFinal\": 85,\r\n  \"adicionadoPor\": 1,\r\n  \"alteradoPor\": 0,\r\n  \"dataAlteracao\": \"2021-12-05T19:24:36.131Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/CampanhaVacinacao/CriarCampanhaVacinacao\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"CampanhaVacinacao",
+										"CriarCampanhaVacinacao\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Criado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar Campanha",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"campanhaId\": 3,\r\n  \"vacinaId\": 14,\r\n  \"nome\": \"Parque Kabanas - Primeira Dose\",\r\n  \"descricao\": \"Levar documentos de identificação.\",\r\n  \"dataInicial\": \"2021-12-03T19:30:01.808Z\",\r\n  \"dataFinal\": \"2021-12-06T19:30:01.808Z\",\r\n  \"idadeFaixaEtariaInicial\": 30,\r\n  \"idadeFaixaEtariaFinal\": 32,\r\n  \"adicionadoPor\": 1,\r\n  \"alteradoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:30:01.808Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/CampanhaVacinacao/AtualizarCampanhaVacinacao",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"CampanhaVacinacao",
+								"AtualizarCampanhaVacinacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar Campanha",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"campanhaId\": 3,\r\n  \"vacinaId\": 14,\r\n  \"nome\": \"Parque Kabanas - Primeira Dose\",\r\n  \"descricao\": \"Levar documentos de identificação.\",\r\n  \"dataInicial\": \"2021-12-03T19:30:01.808Z\",\r\n  \"dataFinal\": \"2021-12-06T19:30:01.808Z\",\r\n  \"idadeFaixaEtariaInicial\": 30,\r\n  \"idadeFaixaEtariaFinal\": 32,\r\n  \"adicionadoPor\": 1,\r\n  \"alteradoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:30:01.808Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/CampanhaVacinacao/AtualizarCampanhaVacinacao\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"CampanhaVacinacao",
+										"AtualizarCampanhaVacinacao\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Atualizado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar Campanha",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/api/CampanhaVacinacao/DeletarCampanhaVacinacao/5",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacina",
+								"api",
+								"CampanhaVacinacao",
+								"DeletarCampanhaVacinacao",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar Campanha",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"estoqueId\": 11,\r\n  \"vacinaId\": 16,\r\n  \"quantidade\": 1000,\r\n  \"quantidadeMinimaAlerta\": 200,\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:20:14.989Z\",\r\n  \"alteradoPor\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/api/CampanhaVacinacao/DeletarCampanhaVacinacao/5\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacina",
+										"api",
+										"CampanhaVacinacao",
+										"DeletarCampanhaVacinacao",
+										"5\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Deletado com sucesso\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "5 - Local de Vacinação",
+			"item": [
+				{
+					"name": "Obter Local de Vacinação",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/LocalVacinacao/ObterLocaisVacinacao",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"LocalVacinacao",
+								"ObterLocaisVacinacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter Local de Vacinação",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/LocalVacinacao/ObterLocaisVacinacao\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"LocalVacinacao",
+										"ObterLocaisVacinacao\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"data\": [\r\n    {\r\n      \"localVacinacaoId\": 1,\r\n      \"nome\": \"Escola Estadual de Araguari\",\r\n      \"logradouro\": \"Rua. 12, 899\",\r\n      \"complemento\": \"\",\r\n      \"bairro\": \"Santo Inácio\",\r\n      \"cidade\": \"Araguari\",\r\n      \"uf\": \"MG\",\r\n      \"cep\": \"38400000\",\r\n      \"adicionadoPor\": 1,\r\n      \"dataAlteracao\": \"2021-12-03T11:16:56.523\",\r\n      \"alteradoPor\": 1,\r\n      \"capacidadeAtendimento\": 1,\r\n      \"ativo\": false,\r\n      \"statusDescricao\": \"Inativo\",\r\n      \"agendamento\": null\r\n    },\r\n    {\r\n      \"localVacinacaoId\": 2,\r\n      \"nome\": \"UPA - Parque Kabanas\",\r\n      \"logradouro\": \"Rua\",\r\n      \"complemento\": \"\",\r\n      \"bairro\": \"Tibery\",\r\n      \"cidade\": \"Araguari\",\r\n      \"uf\": \"MG\",\r\n      \"cep\": \"38400000\",\r\n      \"adicionadoPor\": 1,\r\n      \"dataAlteracao\": null,\r\n      \"alteradoPor\": null,\r\n      \"capacidadeAtendimento\": 1,\r\n      \"ativo\": true,\r\n      \"statusDescricao\": \"Ativo\",\r\n      \"agendamento\": null\r\n    },\r\n    {\r\n      \"localVacinacaoId\": 3,\r\n      \"nome\": \"Escola Parque dos Verdes\",\r\n      \"logradouro\": \"Rua 3\",\r\n      \"complemento\": \"\",\r\n      \"bairro\": \"Santa Rosa\",\r\n      \"cidade\": \"Araguari\",\r\n      \"uf\": \"MG\",\r\n      \"cep\": \"38408-238\",\r\n      \"adicionadoPor\": 1,\r\n      \"dataAlteracao\": \"2021-12-05T19:34:33.39\",\r\n      \"alteradoPor\": 0,\r\n      \"capacidadeAtendimento\": 100,\r\n      \"ativo\": true,\r\n      \"statusDescricao\": \"Ativo\",\r\n      \"agendamento\": null\r\n    }\r\n  ],\r\n  \"recordsTotal\": 3,\r\n  \"recordsFiltered\": 3\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar Local de Vacinação",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/LocalVacinacao/CriarLocalVacinacao",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"LocalVacinacao",
+								"CriarLocalVacinacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar Local de Vacinação",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"localVacinacaoId\": 0,\r\n  \"nome\": \"Escola Parque dos Verdes\",\r\n  \"logradouro\": \"Rua 3\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"Santa Rosa\",\r\n  \"cidade\": \"Araguari\",\r\n  \"uf\": \"MG\",\r\n  \"cep\": \"38408-238\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:34:33.391Z\",\r\n  \"alteradoPor\": 0,\r\n  \"capacidadeAtendimento\": 100,\r\n  \"ativo\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/LocalVacinacao/CriarLocalVacinacao",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"LocalVacinacao",
+										"CriarLocalVacinacao"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Criado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar Local de Vacinação",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"localVacinacaoId\": 1,\r\n  \"nome\": \"Escola Estadual de Araguari\",\r\n  \"logradouro\": \"Rua. 12, 899\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"Santo Inácio\",\r\n  \"cidade\": \"Araguari\",\r\n  \"uf\": \"MG\",\r\n  \"cep\": \"38400000\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:48:30.748Z\",\r\n  \"alteradoPor\": 1,\r\n  \"capacidadeAtendimento\": 45,\r\n  \"ativo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/LocalVacinacao/AtualizarLocalVacinacao",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"LocalVacinacao",
+								"AtualizarLocalVacinacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar Local de Vacinação",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"localVacinacaoId\": 1,\r\n  \"nome\": \"Escola Estadual de Araguari\",\r\n  \"logradouro\": \"Rua. 12, 899\",\r\n  \"complemento\": \"\",\r\n  \"bairro\": \"Santo Inácio\",\r\n  \"cidade\": \"Araguari\",\r\n  \"uf\": \"MG\",\r\n  \"cep\": \"38400000\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:48:30.748Z\",\r\n  \"alteradoPor\": 1,\r\n  \"capacidadeAtendimento\": 45,\r\n  \"ativo\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/LocalVacinacao/AtualizarLocalVacinacao",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"LocalVacinacao",
+										"AtualizarLocalVacinacao"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Atualizado com sucesso\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "6 - Agendamento",
+			"item": [
+				{
+					"name": "Obter Agendamento por pessoa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/ObterAgendamentoPorPessoa/25",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Agendamento",
+								"ObterAgendamentoPorPessoa",
+								"25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter Agendamento por pessoa",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/ObterAgendamentoPorPessoa/25\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Agendamento",
+										"ObterAgendamentoPorPessoa",
+										"25\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"data\": [\r\n    {\r\n      \"agendamentoId\": 10,\r\n      \"pessoa\": null,\r\n      \"pessoaId\": 0,\r\n      \"localVacinacao\": null,\r\n      \"localVacinacaoId\": 1,\r\n      \"data\": \"2021-12-01T00:00:00\",\r\n      \"hora\": \"05:16\",\r\n      \"adicionadoPor\": 0,\r\n      \"dataAlteracao\": null,\r\n      \"alteradoPor\": null,\r\n      \"status\": false,\r\n      \"descricaoLocal\": \"Escola Estadual de Araguari\",\r\n      \"dataFormatada\": \"01/12/2021\",\r\n      \"horaFormatada\": null,\r\n      \"pessoaIdentificacao\": null,\r\n      \"situacao\": \"Aguardando para Vacinação\"\r\n    }\r\n  ],\r\n  \"recordsTotal\": 1,\r\n  \"recordsFiltered\": 1\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar Agendamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"agendamentoId\": 0,\r\n  \"pessoaId\": 25,\r\n  \"localVacinacaoId\": 2,\r\n  \"data\": \"2021-12-07T19:51:28.404Z\",\r\n  \"hora\": \"10:30\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:51:28.404Z\",\r\n  \"alteradoPor\": 0,\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/CriarAgendamento",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Agendamento",
+								"CriarAgendamento"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar Agendamento",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"agendamentoId\": 0,\r\n  \"pessoaId\": 25,\r\n  \"localVacinacaoId\": 2,\r\n  \"data\": \"2021-12-07T19:51:28.404Z\",\r\n  \"hora\": \"10:30\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:51:28.404Z\",\r\n  \"alteradoPor\": 0,\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/CriarAgendamento\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Agendamento",
+										"CriarAgendamento\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Criado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar Agendamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"agendamentoId\": 11,\r\n  \"pessoaId\": 24,\r\n  \"localVacinacaoId\": 2,\r\n  \"data\": \"2021-12-06T21:07:28.031Z\",\r\n  \"hora\": \"14:20\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T21:07:28.031Z\",\r\n  \"alteradoPor\": 1,\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/AtualizarAgendamento",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Agendamento",
+								"AtualizarAgendamento"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar Agendamento",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"agendamentoId\": 11,\r\n  \"pessoaId\": 24,\r\n  \"localVacinacaoId\": 2,\r\n  \"data\": \"2021-12-06T21:07:28.031Z\",\r\n  \"hora\": \"14:20\",\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T21:07:28.031Z\",\r\n  \"alteradoPor\": 1,\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/AtualizarAgendamento",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Agendamento",
+										"AtualizarAgendamento"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Atualizado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Finalizar Agendamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"alteradoPor\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/FinalizarAgendamento/14",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Agendamento",
+								"FinalizarAgendamento",
+								"14"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Finalizar Agendamento",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"alteradoPor\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Agendamento/FinalizarAgendamento/14",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Agendamento",
+										"FinalizarAgendamento",
+										"14"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Agendamento finalizado com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar Agendamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/api/Agendamento/DeletarAgendamento/25",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacina",
+								"api",
+								"Agendamento",
+								"DeletarAgendamento",
+								"25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar Agendamento",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"estoqueId\": 11,\r\n  \"vacinaId\": 16,\r\n  \"quantidade\": 1000,\r\n  \"quantidadeMinimaAlerta\": 200,\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:20:14.989Z\",\r\n  \"alteradoPor\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/api/Agendamento/DeletarAgendamento/25\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacina",
+										"api",
+										"Agendamento",
+										"DeletarAgendamento",
+										"25\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Deletado com sucesso\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "7 - Vacinação",
+			"item": [
+				{
+					"name": "Obter cartão vacinação por pessoa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacinacao/ObterVacinacaoPorPessoaId/24",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacinacao",
+								"ObterVacinacaoPorPessoaId",
+								"24"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter cartão vacinação por pessoa",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacinacao/ObterVacinacaoPorPessoaId/24\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacinacao",
+										"ObterVacinacaoPorPessoaId",
+										"24\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"data\": [\r\n    {\r\n      \"cartaoVacinacaoRegistroId\": 10,\r\n      \"cartaoVacinacaoId\": 4,\r\n      \"vacina\": {\r\n        \"vacinaId\": 18,\r\n        \"codigoIdentificador\": 2,\r\n        \"nome\": \"Pfizer\",\r\n        \"descricao\": \"Laboratório responsável Vacina BioNTech\",\r\n        \"adicionadoPor\": 1,\r\n        \"ativo\": true,\r\n        \"quantidadeMinimaAlerta\": 0\r\n      }\r\n    }\r\n  ],\r\n  \"recordsTotal\": 1,\r\n  \"recordsFiltered\": 1\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar registro vacinação",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cartaoVacinacaoId\": 0,\r\n    \"pessoaId\": 24,\r\n    \"vacinaId\": 16,\r\n    \"dataVacinacao\": \"2021-08-05T21:26:18.389Z\",\r\n    \"adicionadoPor\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacinacao/CriarVacinacaoPorPessoa",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacinacao",
+								"CriarVacinacaoPorPessoa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar registro vacinação",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cartaoVacinacaoId\": 0,\r\n    \"pessoaId\": 24,\r\n    \"vacinaId\": 16,\r\n    \"dataVacinacao\": \"2021-08-05T21:26:18.389Z\",\r\n    \"adicionadoPor\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacinacao/CriarVacinacaoPorPessoa",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacinacao",
+										"CriarVacinacaoPorPessoa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Vacinação registrada com sucesso\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar Agendamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/api/Vacinacao/DeletarVacinacaoPorPessoa/11",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Vacina",
+								"api",
+								"Vacinacao",
+								"DeletarVacinacaoPorPessoa",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar Agendamento",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"estoqueId\": 11,\r\n  \"vacinaId\": 16,\r\n  \"quantidade\": 1000,\r\n  \"quantidadeMinimaAlerta\": 200,\r\n  \"adicionadoPor\": 1,\r\n  \"dataAlteracao\": \"2021-12-05T19:20:14.989Z\",\r\n  \"alteradoPor\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Vacina/api/Vacinacao/DeletarVacinacaoPorPessoa/11\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Vacina",
+										"api",
+										"Vacinacao",
+										"DeletarVacinacaoPorPessoa",
+										"11\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"status\": \"success\",\r\n  \"responseMsg\": \"Deletado com sucesso e estoque de vacina ajustado.\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "8 - Alertas - Notificações",
+			"item": [
+				{
+					"name": "Obter notificações geral",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterListaNotificacoes",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"ObterListaNotificacoes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter cartão vacinação por pessoa",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterListaNotificacoes\n",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"ObterListaNotificacoes\n"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-05 18:29:19.9817775\",\n            \"logOutTime\": null,\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Paula F. Paranaiba\",\n            \"userName\": \"paulaf\",\n            \"logInTime\": \"2021-12-05 18:23:17.4034425\",\n            \"logOutTime\": \"2021-12-05 18:29:15.5376480\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-05 18:22:47.2820244\",\n            \"logOutTime\": \"2021-12-05 18:23:14.2300377\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-05 18:19:35.2969598\",\n            \"logOutTime\": \"2021-12-05 18:22:44.1785878\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-05 18:16:25.2231809\",\n            \"logOutTime\": \"2021-12-05 18:19:35.2863964\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Paula F. Paranaiba\",\n            \"userName\": \"paulaf\",\n            \"logInTime\": \"2021-12-05 18:06:43.0951949\",\n            \"logOutTime\": \"2021-12-05 18:16:22.7331875\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-05 12:57:43.2067096\",\n            \"logOutTime\": \"2021-12-05 18:06:40.0608866\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-05 12:56:11.8711264\",\n            \"logOutTime\": \"2021-12-05 12:57:38.3983620\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-04 06:48:05.8980566\",\n            \"logOutTime\": null,\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-04 06:43:52.4100019\",\n            \"logOutTime\": \"2021-12-04 06:48:01.6792542\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Cidadão 02-1\",\n            \"userName\": \"cidadao02\",\n            \"logInTime\": \"2021-12-04 06:41:01.6365187\",\n            \"logOutTime\": \"2021-12-04 06:43:49.7918581\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-04 06:40:49.9629253\",\n            \"logOutTime\": \"2021-12-04 06:40:58.6414623\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-04 06:36:04.4415667\",\n            \"logOutTime\": \"2021-12-04 06:40:41.2855190\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-04 06:18:40.0819226\",\n            \"logOutTime\": \"2021-12-04 06:18:46.1287224\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-04 06:14:43.1497961\",\n            \"logOutTime\": \"2021-12-04 06:18:38.5188596\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-04 06:07:47.6917225\",\n            \"logOutTime\": \"2021-12-04 06:14:40.8301162\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-04 06:05:07.0870984\",\n            \"logOutTime\": \"2021-12-04 06:07:43.2248041\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-04 05:41:51.7512933\",\n            \"logOutTime\": \"2021-12-04 06:05:04.1828178\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-04 05:24:20.7526938\",\n            \"logOutTime\": \"2021-12-04 05:41:47.8576649\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Cidadão 02-1\",\n            \"userName\": \"cidadao02\",\n            \"logInTime\": \"2021-12-04 05:20:32.7397407\",\n            \"logOutTime\": \"2021-12-04 05:24:18.2218489\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Paula F. Paranaiba\",\n            \"userName\": \"paulaf\",\n            \"logInTime\": \"2021-12-04 05:19:31.3576884\",\n            \"logOutTime\": \"2021-12-04 05:20:29.1738625\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-04 05:18:12.5422691\",\n            \"logOutTime\": \"2021-12-04 05:19:16.5657005\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-04 05:16:07.5363171\",\n            \"logOutTime\": \"2021-12-04 05:18:09.5582657\",\n            \"ip\": \"45.4.212.219\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-03 11:17:45.2819439\",\n            \"logOutTime\": \"2021-12-04 05:15:58.4628207\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 11:16:47.0378688\",\n            \"logOutTime\": \"2021-12-03 11:17:40.8866980\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 11:07:01.8614677\",\n            \"logOutTime\": \"2021-12-03 11:16:46.5908676\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-03 11:06:48.9171029\",\n            \"logOutTime\": \"2021-12-03 11:06:59.1203788\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-03 10:55:42.4112386\",\n            \"logOutTime\": \"2021-12-03 11:06:46.8121550\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 10:43:49.2979947\",\n            \"logOutTime\": \"2021-12-03 10:55:38.8767565\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 10:24:18.3641357\",\n            \"logOutTime\": \"2021-12-03 10:43:46.3149979\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 10:23:54.1312629\",\n            \"logOutTime\": \"2021-12-03 10:24:00.1356891\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-03 10:20:29.4029262\",\n            \"logOutTime\": \"2021-12-03 10:23:47.9695982\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-03 10:19:57.2681289\",\n            \"logOutTime\": \"2021-12-03 10:20:21.3913323\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 10:16:00.5171495\",\n            \"logOutTime\": \"2021-12-03 10:19:42.5881891\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 10:14:41.0628770\",\n            \"logOutTime\": \"2021-12-03 10:15:59.3707249\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 10:10:19.2982754\",\n            \"logOutTime\": \"2021-12-03 10:14:39.3571527\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 10:04:12.7215966\",\n            \"logOutTime\": \"2021-12-03 10:10:17.3200312\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 10:01:27.2722905\",\n            \"logOutTime\": \"2021-12-03 10:04:12.5594078\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 10:00:42.4630205\",\n            \"logOutTime\": \"2021-12-03 10:01:25.9778578\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:59:45.3052642\",\n            \"logOutTime\": \"2021-12-03 10:00:39.9055155\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:56:41.0775814\",\n            \"logOutTime\": \"2021-12-03 09:59:43.2561983\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:50:14.5587377\",\n            \"logOutTime\": \"2021-12-03 09:56:39.8971926\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:43:04.0995423\",\n            \"logOutTime\": \"2021-12-03 09:48:05.3906712\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:39:27.1616040\",\n            \"logOutTime\": \"2021-12-03 09:39:48.9313316\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:35:08.1317591\",\n            \"logOutTime\": \"2021-12-03 09:35:12.7873191\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:35:00.3054884\",\n            \"logOutTime\": \"2021-12-03 09:35:04.5627360\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:33:12.1549810\",\n            \"logOutTime\": \"2021-12-03 09:33:16.1907036\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:31:23.3456741\",\n            \"logOutTime\": \"2021-12-03 09:31:29.1765687\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:31:06.4944440\",\n            \"logOutTime\": \"2021-12-03 09:31:12.7878719\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:25:16.6203315\",\n            \"logOutTime\": \"2021-12-03 09:27:56.4786183\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:22:52.0756857\",\n            \"logOutTime\": \"2021-12-03 09:23:00.3563659\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 09:02:53.9191841\",\n            \"logOutTime\": \"2021-12-03 09:22:44.6971393\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 08:58:14.5441745\",\n            \"logOutTime\": \"2021-12-03 08:59:39.4562950\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 08:54:13.7539117\",\n            \"logOutTime\": \"2021-12-03 08:58:13.1955411\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 08:42:40.7467305\",\n            \"logOutTime\": null,\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ruth Carvalho Araujo\",\n            \"userName\": \"ruthcarvalho\",\n            \"logInTime\": \"2021-12-03 08:14:34.9434680\",\n            \"logOutTime\": \"2021-12-03 08:42:38.2335382\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 08:06:13.3019916\",\n            \"logOutTime\": \"2021-12-03 08:14:31.5788330\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 08:05:24.6319839\",\n            \"logOutTime\": \"2021-12-03 08:06:11.1360789\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 08:05:18.5112483\",\n            \"logOutTime\": \"2021-12-03 08:05:21.6712707\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"ricardo\",\n            \"userName\": \"agente\",\n            \"logInTime\": \"2021-12-03 07:48:14.2623880\",\n            \"logOutTime\": \"2021-12-03 08:05:15.9333690\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 07:47:42.7507403\",\n            \"logOutTime\": \"2021-12-03 07:47:46.3513394\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        },\n        {\n            \"fullName\": \"Ricardo\",\n            \"userName\": \"admin@2021\",\n            \"logInTime\": \"2021-12-03 07:39:09.9362751\",\n            \"logOutTime\": \"2021-12-03 07:47:40.2693214\",\n            \"ip\": \"138.0.190.116\",\n            \"browser\": \"chrome\",\n            \"browserVersion\": \"96.0.4664\",\n            \"platform\": \"Windows 10\"\n        }\n    ],\n    \"recordsTotal\": 62,\n    \"recordsFiltered\": 62\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "9 - Relatório de acesso",
+			"item": [
+				{
+					"name": "Obter acesso por login - data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterResumoLoginPorData/24",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"ObterResumoLoginPorData",
+								"24"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter acesso por login - data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterResumoLoginPorData/24",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"ObterResumoLoginPorData",
+										"24"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "\n  {\n    \"count\": 2,\n    \"date\": \"2021-12-05\",\n    \"month\": 0,\n    \"year\": 0,\n    \"roleName\": null,\n    \"browser\": null\n  },\n  {\n    \"count\": 1,\n    \"date\": \"2021-12-04\",\n    \"month\": 0,\n    \"year\": 0,\n    \"roleName\": null,\n    \"browser\": null\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obter acesso por login - mês",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterResumoLoginPorMes/24",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"ObterResumoLoginPorMes",
+								"24"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter acesso por login - mês",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterResumoLoginPorMes/24",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"ObterResumoLoginPorMes",
+										"24"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "[\n  {\n    \"count\": 3,\n    \"date\": null,\n    \"month\": 12,\n    \"year\": 0,\n    \"roleName\": null,\n    \"browser\": null\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obter acesso por login - ano",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterResumoLoginPorAno/24",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"ObterResumoLoginPorAno",
+								"24"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter acesso por login - ano",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterResumoLoginPorAno/24",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"ObterResumoLoginPorAno",
+										"24"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "[\n  {\n    \"count\": 3,\n    \"date\": null,\n    \"month\": 0,\n    \"year\": 2021,\n    \"roleName\": null,\n    \"browser\": null\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obter acesso por navegador",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZnVsbE5hbWUiOiJSaWNhcmRvIiwicm9sZSI6IkFkbWluIiwianRpIjoiNTg3ODAwMTItZjEzZS00OWVmLTk2ZWMtMzkzMDM5N2NhMTVkIiwiZXhwIjoxNjM4NzQxODA5LCJpc3MiOiJTaXN2YWNBcGkiLCJhdWQiOiJTaXN2YWNDbGllbnQifQ.sFz6x3JURmCuYOf0Sgw68XLWZCYvW6XOI9liCYd81rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterListaNavegadores",
+							"protocol": "https",
+							"host": [
+								"11339677-cba2-4b32-a6c7-226a21aff327",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"Usuarios",
+								"ObterListaNavegadores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obter acesso por navegador",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://11339677-cba2-4b32-a6c7-226a21aff327.mock.pstmn.io/api/Usuarios/ObterListaNavegadores",
+									"protocol": "https",
+									"host": [
+										"11339677-cba2-4b32-a6c7-226a21aff327",
+										"mock",
+										"pstmn",
+										"io"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"ObterListaNavegadores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n  \"data\": [\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-05 18:29:19.9817775\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Paula F. Paranaiba\",\n      \"userName\": \"paulaf\",\n      \"logInTime\": \"2021-12-05 18:23:17.4034425\",\n      \"logOutTime\": \"2021-12-05 18:29:15.5376480\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-05 18:22:47.2820244\",\n      \"logOutTime\": \"2021-12-05 18:23:14.2300377\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-05 18:19:35.2969598\",\n      \"logOutTime\": \"2021-12-05 18:22:44.1785878\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-05 18:16:25.2231809\",\n      \"logOutTime\": \"2021-12-05 18:19:35.2863964\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Paula F. Paranaiba\",\n      \"userName\": \"paulaf\",\n      \"logInTime\": \"2021-12-05 18:06:43.0951949\",\n      \"logOutTime\": \"2021-12-05 18:16:22.7331875\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-05 12:57:43.2067096\",\n      \"logOutTime\": \"2021-12-05 18:06:40.0608866\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-05 12:56:11.8711264\",\n      \"logOutTime\": \"2021-12-05 12:57:38.3983620\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-04 06:48:05.8980566\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-04 06:43:52.4100019\",\n      \"logOutTime\": \"2021-12-04 06:48:01.6792542\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Cidadão 02-1\",\n      \"userName\": \"cidadao02\",\n      \"logInTime\": \"2021-12-04 06:41:01.6365187\",\n      \"logOutTime\": \"2021-12-04 06:43:49.7918581\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-04 06:40:49.9629253\",\n      \"logOutTime\": \"2021-12-04 06:40:58.6414623\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-04 06:36:04.4415667\",\n      \"logOutTime\": \"2021-12-04 06:40:41.2855190\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-04 06:18:40.0819226\",\n      \"logOutTime\": \"2021-12-04 06:18:46.1287224\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-04 06:14:43.1497961\",\n      \"logOutTime\": \"2021-12-04 06:18:38.5188596\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-04 06:07:47.6917225\",\n      \"logOutTime\": \"2021-12-04 06:14:40.8301162\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-04 06:05:07.0870984\",\n      \"logOutTime\": \"2021-12-04 06:07:43.2248041\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-04 05:41:51.7512933\",\n      \"logOutTime\": \"2021-12-04 06:05:04.1828178\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-04 05:24:20.7526938\",\n      \"logOutTime\": \"2021-12-04 05:41:47.8576649\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Cidadão 02-1\",\n      \"userName\": \"cidadao02\",\n      \"logInTime\": \"2021-12-04 05:20:32.7397407\",\n      \"logOutTime\": \"2021-12-04 05:24:18.2218489\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Paula F. Paranaiba\",\n      \"userName\": \"paulaf\",\n      \"logInTime\": \"2021-12-04 05:19:31.3576884\",\n      \"logOutTime\": \"2021-12-04 05:20:29.1738625\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-04 05:18:12.5422691\",\n      \"logOutTime\": \"2021-12-04 05:19:16.5657005\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-04 05:16:07.5363171\",\n      \"logOutTime\": \"2021-12-04 05:18:09.5582657\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-03 11:17:45.2819439\",\n      \"logOutTime\": \"2021-12-04 05:15:58.4628207\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 11:16:47.0378688\",\n      \"logOutTime\": \"2021-12-03 11:17:40.8866980\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 11:07:01.8614677\",\n      \"logOutTime\": \"2021-12-03 11:16:46.5908676\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-03 11:06:48.9171029\",\n      \"logOutTime\": \"2021-12-03 11:06:59.1203788\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-03 10:55:42.4112386\",\n      \"logOutTime\": \"2021-12-03 11:06:46.8121550\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 10:43:49.2979947\",\n      \"logOutTime\": \"2021-12-03 10:55:38.8767565\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 10:24:18.3641357\",\n      \"logOutTime\": \"2021-12-03 10:43:46.3149979\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 10:23:54.1312629\",\n      \"logOutTime\": \"2021-12-03 10:24:00.1356891\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-03 10:20:29.4029262\",\n      \"logOutTime\": \"2021-12-03 10:23:47.9695982\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-03 10:19:57.2681289\",\n      \"logOutTime\": \"2021-12-03 10:20:21.3913323\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 10:16:00.5171495\",\n      \"logOutTime\": \"2021-12-03 10:19:42.5881891\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 10:14:41.0628770\",\n      \"logOutTime\": \"2021-12-03 10:15:59.3707249\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 10:10:19.2982754\",\n      \"logOutTime\": \"2021-12-03 10:14:39.3571527\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 10:04:12.7215966\",\n      \"logOutTime\": \"2021-12-03 10:10:17.3200312\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 10:01:27.2722905\",\n      \"logOutTime\": \"2021-12-03 10:04:12.5594078\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 10:00:42.4630205\",\n      \"logOutTime\": \"2021-12-03 10:01:25.9778578\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:59:45.3052642\",\n      \"logOutTime\": \"2021-12-03 10:00:39.9055155\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:56:41.0775814\",\n      \"logOutTime\": \"2021-12-03 09:59:43.2561983\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:50:14.5587377\",\n      \"logOutTime\": \"2021-12-03 09:56:39.8971926\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:43:04.0995423\",\n      \"logOutTime\": \"2021-12-03 09:48:05.3906712\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:39:27.1616040\",\n      \"logOutTime\": \"2021-12-03 09:39:48.9313316\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:35:08.1317591\",\n      \"logOutTime\": \"2021-12-03 09:35:12.7873191\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:35:00.3054884\",\n      \"logOutTime\": \"2021-12-03 09:35:04.5627360\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:33:12.1549810\",\n      \"logOutTime\": \"2021-12-03 09:33:16.1907036\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:31:23.3456741\",\n      \"logOutTime\": \"2021-12-03 09:31:29.1765687\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:31:06.4944440\",\n      \"logOutTime\": \"2021-12-03 09:31:12.7878719\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:25:16.6203315\",\n      \"logOutTime\": \"2021-12-03 09:27:56.4786183\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:22:52.0756857\",\n      \"logOutTime\": \"2021-12-03 09:23:00.3563659\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 09:02:53.9191841\",\n      \"logOutTime\": \"2021-12-03 09:22:44.6971393\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 08:58:14.5441745\",\n      \"logOutTime\": \"2021-12-03 08:59:39.4562950\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 08:54:13.7539117\",\n      \"logOutTime\": \"2021-12-03 08:58:13.1955411\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 08:42:40.7467305\",\n      \"logOutTime\": null,\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-03 08:14:34.9434680\",\n      \"logOutTime\": \"2021-12-03 08:42:38.2335382\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 08:06:13.3019916\",\n      \"logOutTime\": \"2021-12-03 08:14:31.5788330\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 08:05:24.6319839\",\n      \"logOutTime\": \"2021-12-03 08:06:11.1360789\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 08:05:18.5112483\",\n      \"logOutTime\": \"2021-12-03 08:05:21.6712707\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-03 07:48:14.2623880\",\n      \"logOutTime\": \"2021-12-03 08:05:15.9333690\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 07:47:42.7507403\",\n      \"logOutTime\": \"2021-12-03 07:47:46.3513394\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-03 07:39:09.9362751\",\n      \"logOutTime\": \"2021-12-03 07:47:40.2693214\",\n      \"ip\": \"138.0.190.116\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 16:41:02.3965699\",\n      \"logOutTime\": \"2021-12-02 16:42:17.8576970\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-02 16:40:45.7255683\",\n      \"logOutTime\": \"2021-12-02 16:41:00.4392051\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 16:37:29.1608744\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 16:33:22.0694300\",\n      \"logOutTime\": \"2021-12-02 16:35:59.8180809\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 14:47:35.4563557\",\n      \"logOutTime\": \"2021-12-02 16:33:19.7600090\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 14:17:12.6491453\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 13:57:46.2383272\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 13:19:15.5150707\",\n      \"logOutTime\": \"2021-12-02 13:45:08.3328951\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 13:18:53.0310680\",\n      \"logOutTime\": \"2021-12-02 13:19:00.6964766\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-02 07:53:55.3088542\",\n      \"logOutTime\": \"2021-12-02 13:18:24.3926436\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 07:53:29.4167005\",\n      \"logOutTime\": \"2021-12-02 07:53:44.3832733\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 07:50:20.7958319\",\n      \"logOutTime\": \"2021-12-02 07:53:27.4843513\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 06:43:40.6408782\",\n      \"logOutTime\": \"2021-12-02 07:04:59.2265983\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 06:40:53.2818844\",\n      \"logOutTime\": \"2021-12-02 06:42:33.0632966\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 06:29:06.4327852\",\n      \"logOutTime\": \"2021-12-02 06:40:51.1958580\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 06:27:41.6909337\",\n      \"logOutTime\": \"2021-12-02 06:29:01.9932780\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-02 06:08:46.2389815\",\n      \"logOutTime\": \"2021-12-02 06:27:36.1846939\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-01 20:30:09.0124596\",\n      \"logOutTime\": null,\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 20:28:37.0668944\",\n      \"logOutTime\": \"2021-12-01 20:29:55.3959812\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 20:26:46.1543084\",\n      \"logOutTime\": \"2021-12-01 20:28:33.7077278\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 20:26:08.5057261\",\n      \"logOutTime\": \"2021-12-01 20:26:14.0631495\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 20:09:46.7540789\",\n      \"logOutTime\": \"2021-12-01 20:21:46.8460063\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 19:14:42.7338877\",\n      \"logOutTime\": null,\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 19:08:17.6530682\",\n      \"logOutTime\": null,\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 19:08:01.9520130\",\n      \"logOutTime\": \"2021-12-01 19:08:14.1099322\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 19:05:32.0865633\",\n      \"logOutTime\": \"2021-12-01 19:07:58.8508020\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 19:03:31.4777695\",\n      \"logOutTime\": \"2021-12-01 19:05:27.6965522\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 19:03:01.3645791\",\n      \"logOutTime\": \"2021-12-01 19:03:23.6664283\",\n      \"ip\": \"138.0.189.2\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 17:57:22.4685857\",\n      \"logOutTime\": \"2021-12-01 19:03:00.8222491\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 17:55:27.3369454\",\n      \"logOutTime\": \"2021-12-01 17:55:38.2873149\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 17:53:13.0024434\",\n      \"logOutTime\": \"2021-12-01 17:53:27.3365231\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ricardo\",\n      \"userName\": \"admin@2021\",\n      \"logInTime\": \"2021-12-01 17:52:47.0026450\",\n      \"logOutTime\": \"2021-12-01 17:53:00.8401304\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Helen Smith\",\n      \"userName\": \"user@2021\",\n      \"logInTime\": \"2021-12-01 17:43:54.5256687\",\n      \"logOutTime\": \"2021-12-01 17:52:32.6888984\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"Ruth Carvalho Araujo\",\n      \"userName\": \"ruthcarvalho\",\n      \"logInTime\": \"2021-12-01 17:43:24.8671091\",\n      \"logOutTime\": \"2021-12-01 17:43:35.3938098\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 16:25:37.5323426\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 14:00:17.1768214\",\n      \"logOutTime\": null,\n      \"ip\": \"138.0.190.92\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 13:57:44.6225344\",\n      \"logOutTime\": \"2021-12-01 14:00:11.1976890\",\n      \"ip\": \"138.0.190.92\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 13:57:01.8582447\",\n      \"logOutTime\": \"2021-12-01 13:57:43.6260721\",\n      \"ip\": \"138.0.190.92\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 13:43:21.5240267\",\n      \"logOutTime\": \"2021-12-01 13:56:46.6924025\",\n      \"ip\": \"138.0.190.92\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 08:18:04.0112187\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 07:44:11.9949205\",\n      \"logOutTime\": null,\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-12-01 06:34:57.9900247\",\n      \"logOutTime\": \"2021-12-01 07:44:09.6853446\",\n      \"ip\": \"138.0.190.92\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-11-30 18:40:11.9103022\",\n      \"logOutTime\": \"2021-12-01 06:34:56.1290173\",\n      \"ip\": \"138.0.190.92\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-11-30 15:04:57.9069051\",\n      \"logOutTime\": \"2021-11-30 18:40:11.6260096\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    },\n    {\n      \"fullName\": \"ricardo\",\n      \"userName\": \"agente\",\n      \"logInTime\": \"2021-11-30 15:04:33.0152869\",\n      \"logOutTime\": \"2021-11-30 15:04:55.1979770\",\n      \"ip\": \"45.4.212.219\",\n      \"browser\": \"chrome\",\n      \"browserVersion\": \"96.0.4664\",\n      \"platform\": \"Windows 10\"\n    }\n  ],\n  \"recordsTotal\": 107,\n  \"recordsFiltered\": 107\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
